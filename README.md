@@ -2,6 +2,8 @@
 
 Multistream is a prototype I have been working on which allows you to watch multiple streams at once and across services.
 
+Please note this is still very much a work in progress project
+
 ## Current Supported Services:
 - [twitch.tv](twitch.tv)
 - [beam.pro](beam.pro)
