@@ -3,7 +3,7 @@
 	error_reporting(E_ALL);
 	spl_autoload_register(function($class) { include_once 'classes/'.$class.'.php'; });
    	$servicesusers = explode("/", $_SERVER["REQUEST_URI"]);
-   	array_shift($servicesusers) ;
+   	array_shift($servicesusers) ; // To remove the first element which is usually empty. If inside a subfolder, the fubfolder may also need removing from array as well
    	$countOfStreams = count($servicesusers);
    	if($countOfStreams == 1){ $cols = 12; }
    	else if($countOfStreams == 2){ $cols = 6; } // Improve this bit
